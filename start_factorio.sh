@@ -4,7 +4,7 @@
 ./update_check.sh bootrun
 
 # Setup Factorio startup arguments
-FACTORIO_STARTUP_COMMANDS="--port ${FACTORIO_PORT}"
+FACTORIO_STARTUP_COMMANDS="--port ${FACTORIO_PORT} --bind 23.100.229.237"
 if [ ! -z ${FACTORIO_SERVER_SETTINGS+x} ]; then
 	if [ "$FACTORIO_SERVER_SETTINGS" != "" ]; then
 		FACTORIO_STARTUP_COMMANDS="$FACTORIO_STARTUP_COMMANDS --server-settings $FACTORIO_SERVER_SETTINGS"
